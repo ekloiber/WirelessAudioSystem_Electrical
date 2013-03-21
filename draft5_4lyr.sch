@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -14339,7 +14339,6 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <part name="L8" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="3.9n_HF"/>
 <part name="L10" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="1.5n_HF"/>
 <part name="MICROSD" library="00-EvaLibrary" deviceset="MICROSD" device="104031-0811"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="R0603" value="100K"/>
 <part name="GND57" library="SparkFun" deviceset="GND" device=""/>
 <part name="C31" library="rcl" deviceset="C-EU" device="C0603" value="2.2u"/>
 <part name="P+4" library="SparkFun" deviceset="3.3V" device=""/>
@@ -14448,6 +14447,12 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <part name="ERASE" library="00-EvaLibrary" deviceset="TACT_SWITCH" device="-PTS-525"/>
 <part name="C69" library="00-EvaLibrary" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND49" library="SparkFun" deviceset="GND" device=""/>
+<part name="JTAG" library="00-EvaLibrary" deviceset="HEADER-10P" device="-SMD-MALE2"/>
+<part name="R11" library="rcl" deviceset="R-US_" device="R0603" value="100K"/>
+<part name="R14" library="rcl" deviceset="R-US_" device="R0603" value="100K"/>
+<part name="R45" library="rcl" deviceset="R-US_" device="R0603" value="100K"/>
+<part name="R46" library="rcl" deviceset="R-US_" device="R0603" value="100K"/>
+<part name="GND55" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14488,6 +14493,8 @@ With Ilim = 1A</text>
 <wire x1="259.08" y1="16.51" x2="39.37" y2="16.51" width="0.762" layer="94" style="longdash"/>
 <text x="-148.59" y="120.65" size="5.08" layer="94" ratio="10">Wireless SoC</text>
 <text x="132.08" y="119.38" size="5.08" layer="94" ratio="10">LNA/PA</text>
+<text x="659.13" y="-364.49" size="1.778" layer="97">Ensure pull-up on !SD_CARD
+</text>
 </plain>
 <instances>
 <instance part="GND2" gate="1" x="-139.7" y="-44.45" smashed="yes">
@@ -15039,10 +15046,6 @@ With Ilim = 1A</text>
 <instance part="MICROSD" gate="G$1" x="720.09" y="-345.44" smashed="yes">
 <attribute name="NAME" x="707.39" y="-331.47" size="1.778" layer="95"/>
 </instance>
-<instance part="R6" gate="G$1" x="681.99" y="-349.25" smashed="yes" rot="R270">
-<attribute name="NAME" x="683.26" y="-347.98" size="1.778" layer="95"/>
-<attribute name="VALUE" x="683.26" y="-350.52" size="1.778" layer="96"/>
-</instance>
 <instance part="GND57" gate="1" x="704.85" y="-363.22" smashed="yes">
 <attribute name="VALUE" x="702.31" y="-365.76" size="1.778" layer="96"/>
 </instance>
@@ -15313,6 +15316,26 @@ With Ilim = 1A</text>
 </instance>
 <instance part="GND49" gate="1" x="565.15" y="-217.17" smashed="yes">
 <attribute name="VALUE" x="562.61" y="-219.71" size="1.778" layer="96"/>
+</instance>
+<instance part="JTAG" gate="G$1" x="414.02" y="-452.12"/>
+<instance part="R11" gate="G$1" x="424.18" y="-434.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="425.45" y="-433.07" size="1.778" layer="95"/>
+<attribute name="VALUE" x="425.45" y="-435.61" size="1.778" layer="96"/>
+</instance>
+<instance part="R14" gate="G$1" x="434.34" y="-434.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="435.61" y="-433.07" size="1.778" layer="95"/>
+<attribute name="VALUE" x="435.61" y="-435.61" size="1.778" layer="96"/>
+</instance>
+<instance part="R45" gate="G$1" x="444.5" y="-434.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="445.77" y="-433.07" size="1.778" layer="95"/>
+<attribute name="VALUE" x="445.77" y="-435.61" size="1.778" layer="96"/>
+</instance>
+<instance part="R46" gate="G$1" x="454.66" y="-434.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="455.93" y="-433.07" size="1.778" layer="95"/>
+<attribute name="VALUE" x="455.93" y="-435.61" size="1.778" layer="96"/>
+</instance>
+<instance part="GND55" gate="1" x="406.4" y="-469.9" smashed="yes">
+<attribute name="VALUE" x="403.86" y="-472.44" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -15721,6 +15744,20 @@ With Ilim = 1A</text>
 <wire x1="561.34" y1="-213.36" x2="565.15" y2="-213.36" width="0.1524" layer="91"/>
 <wire x1="565.15" y1="-213.36" x2="565.15" y2="-214.63" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="406.4" y1="-447.04" x2="406.4" y2="-452.12" width="0.1524" layer="91"/>
+<pinref part="JTAG" gate="G$1" pin="9"/>
+<wire x1="406.4" y1="-452.12" x2="406.4" y2="-462.28" width="0.1524" layer="91"/>
+<wire x1="406.4" y1="-462.28" x2="406.4" y2="-467.36" width="0.1524" layer="91"/>
+<wire x1="408.94" y1="-462.28" x2="406.4" y2="-462.28" width="0.1524" layer="91"/>
+<junction x="406.4" y="-462.28"/>
+<pinref part="GND55" gate="1" pin="GND"/>
+<pinref part="JTAG" gate="G$1" pin="5"/>
+<wire x1="408.94" y1="-452.12" x2="406.4" y2="-452.12" width="0.1524" layer="91"/>
+<junction x="406.4" y="-452.12"/>
+<pinref part="JTAG" gate="G$1" pin="3"/>
+<wire x1="408.94" y1="-447.04" x2="406.4" y2="-447.04" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3.3V" class="1">
 <segment>
@@ -15788,9 +15825,9 @@ With Ilim = 1A</text>
 <pinref part="MICROSD" gate="G$1" pin="!CS"/>
 </segment>
 <segment>
-<pinref part="U7" gate="C" pin="PC8"/>
-<wire x1="527.05" y1="-283.21" x2="521.97" y2="-283.21" width="0.1524" layer="91"/>
-<label x="521.97" y="-283.21" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U7" gate="C" pin="PC9"/>
+<wire x1="527.05" y1="-288.29" x2="521.97" y2="-288.29" width="0.1524" layer="91"/>
+<label x="521.97" y="-288.29" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PA_EN" class="0">
@@ -16558,11 +16595,6 @@ With Ilim = 1A</text>
 <label x="718.82" y="-323.85" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="681.99" y1="-344.17" x2="681.99" y2="-335.28" width="0.1524" layer="91"/>
-<label x="680.72" y="-344.17" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="R43" gate="G$1" pin="1"/>
 <wire x1="690.88" y1="-463.55" x2="690.88" y2="-459.74" width="0.1524" layer="91"/>
 <label x="689.61" y="-464.82" size="1.778" layer="95" rot="R90"/>
@@ -16591,6 +16623,27 @@ With Ilim = 1A</text>
 <wire x1="524.51" y1="-213.36" x2="527.05" y2="-213.36" width="0.1524" layer="91"/>
 <wire x1="527.05" y1="-213.36" x2="527.05" y2="-205.74" width="0.1524" layer="91"/>
 <label x="525.78" y="-212.09" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="JTAG" gate="G$1" pin="1"/>
+<wire x1="408.94" y1="-441.96" x2="406.4" y2="-441.96" width="0.1524" layer="91"/>
+<wire x1="406.4" y1="-441.96" x2="406.4" y2="-426.72" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="2"/>
+<wire x1="406.4" y1="-426.72" x2="424.18" y2="-426.72" width="0.1524" layer="91"/>
+<wire x1="424.18" y1="-426.72" x2="424.18" y2="-429.26" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="424.18" y1="-426.72" x2="434.34" y2="-426.72" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="-426.72" x2="434.34" y2="-429.26" width="0.1524" layer="91"/>
+<junction x="424.18" y="-426.72"/>
+<pinref part="R45" gate="G$1" pin="2"/>
+<wire x1="434.34" y1="-426.72" x2="444.5" y2="-426.72" width="0.1524" layer="91"/>
+<wire x1="444.5" y1="-426.72" x2="444.5" y2="-429.26" width="0.1524" layer="91"/>
+<junction x="434.34" y="-426.72"/>
+<pinref part="R46" gate="G$1" pin="2"/>
+<wire x1="444.5" y1="-426.72" x2="454.66" y2="-426.72" width="0.1524" layer="91"/>
+<wire x1="454.66" y1="-426.72" x2="454.66" y2="-429.26" width="0.1524" layer="91"/>
+<junction x="444.5" y="-426.72"/>
+<label x="415.29" y="-425.45" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AVDD" class="0">
@@ -16777,18 +16830,14 @@ With Ilim = 1A</text>
 </net>
 <net name="!SD_CARD" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="MICROSD" gate="G$1" pin="SWA"/>
-<wire x1="681.99" y1="-354.33" x2="681.99" y2="-355.6" width="0.1524" layer="91"/>
-<wire x1="681.99" y1="-355.6" x2="704.85" y2="-355.6" width="0.1524" layer="91"/>
-<wire x1="681.99" y1="-355.6" x2="679.45" y2="-355.6" width="0.1524" layer="91"/>
-<junction x="681.99" y="-355.6"/>
-<label x="679.45" y="-355.6" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="701.04" y1="-355.6" x2="704.85" y2="-355.6" width="0.1524" layer="91"/>
+<label x="701.04" y="-355.6" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U7" gate="C" pin="PC9"/>
-<wire x1="527.05" y1="-288.29" x2="521.97" y2="-288.29" width="0.1524" layer="91"/>
-<label x="521.97" y="-288.29" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U7" gate="C" pin="PC8"/>
+<wire x1="527.05" y1="-283.21" x2="521.97" y2="-283.21" width="0.1524" layer="91"/>
+<label x="521.97" y="-283.21" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AVDD_CODEC" class="0">
@@ -17880,6 +17929,15 @@ With Ilim = 1A</text>
 <wire x1="544.83" y1="-208.28" x2="544.83" y2="-213.36" width="0.1524" layer="91"/>
 <junction x="544.83" y="-213.36"/>
 </segment>
+<segment>
+<pinref part="JTAG" gate="G$1" pin="10"/>
+<pinref part="R46" gate="G$1" pin="1"/>
+<wire x1="419.1" y1="-462.28" x2="454.66" y2="-462.28" width="0.1524" layer="91"/>
+<wire x1="454.66" y1="-462.28" x2="454.66" y2="-439.42" width="0.1524" layer="91"/>
+<wire x1="454.66" y1="-462.28" x2="458.47" y2="-462.28" width="0.1524" layer="91"/>
+<junction x="454.66" y="-462.28"/>
+<label x="458.47" y="-462.28" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="ERASE" class="0">
 <segment>
@@ -17963,9 +18021,75 @@ With Ilim = 1A</text>
 <label x="335.28" y="-288.29" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="TMS" class="0">
+<segment>
+<pinref part="U7" gate="B" pin="PB31"/>
+<wire x1="434.34" y1="-400.05" x2="426.72" y2="-400.05" width="0.1524" layer="91"/>
+<label x="426.72" y="-400.05" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JTAG" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="419.1" y1="-441.96" x2="424.18" y2="-441.96" width="0.1524" layer="91"/>
+<wire x1="424.18" y1="-441.96" x2="424.18" y2="-439.42" width="0.1524" layer="91"/>
+<wire x1="424.18" y1="-441.96" x2="458.47" y2="-441.96" width="0.1524" layer="91"/>
+<junction x="424.18" y="-441.96"/>
+<label x="458.47" y="-441.96" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="TDO" class="0">
+<segment>
+<pinref part="U7" gate="B" pin="PB30"/>
+<wire x1="434.34" y1="-394.97" x2="426.72" y2="-394.97" width="0.1524" layer="91"/>
+<label x="426.72" y="-394.97" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JTAG" gate="G$1" pin="6"/>
+<wire x1="419.1" y1="-452.12" x2="458.47" y2="-452.12" width="0.1524" layer="91"/>
+<label x="458.47" y="-452.12" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="TDI" class="0">
+<segment>
+<pinref part="U7" gate="B" pin="PB29"/>
+<wire x1="434.34" y1="-389.89" x2="426.72" y2="-389.89" width="0.1524" layer="91"/>
+<label x="426.72" y="-389.89" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R45" gate="G$1" pin="1"/>
+<wire x1="444.5" y1="-457.2" x2="444.5" y2="-439.42" width="0.1524" layer="91"/>
+<pinref part="JTAG" gate="G$1" pin="8"/>
+<wire x1="419.1" y1="-457.2" x2="444.5" y2="-457.2" width="0.1524" layer="91"/>
+<wire x1="444.5" y1="-457.2" x2="458.47" y2="-457.2" width="0.1524" layer="91"/>
+<junction x="444.5" y="-457.2"/>
+<label x="458.47" y="-457.2" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="TCK" class="0">
+<segment>
+<pinref part="U7" gate="B" pin="PB28"/>
+<wire x1="434.34" y1="-384.81" x2="426.72" y2="-384.81" width="0.1524" layer="91"/>
+<label x="426.72" y="-384.81" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JTAG" gate="G$1" pin="4"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="419.1" y1="-447.04" x2="434.34" y2="-447.04" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="-447.04" x2="434.34" y2="-439.42" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="-447.04" x2="458.47" y2="-447.04" width="0.1524" layer="91"/>
+<junction x="434.34" y="-447.04"/>
+<label x="458.47" y="-447.04" size="1.778" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
