@@ -14235,7 +14235,7 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <part name="GND37" library="SparkFun" deviceset="GND" device=""/>
 <part name="C24" library="rcl" deviceset="C-EU" device="C0603" value="15p"/>
 <part name="C29" library="rcl" deviceset="C-EU" device="C0603" value="15p"/>
-<part name="CC_DEBUG" library="00-EvaLibrary" deviceset="HEADER-10P" device="-SMD-MALE2"/>
+<part name="CCD" library="00-EvaLibrary" deviceset="HEADER-10P" device="-SMD-MALE2"/>
 <part name="P+8" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND38" library="SparkFun" deviceset="GND" device=""/>
 <part name="C52" library="rcl" deviceset="C-EU" device="C0603" value="10u"/>
@@ -14662,7 +14662,7 @@ With Ilim = 1A</text>
 <attribute name="NAME" x="-57.15" y="-17.78" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-57.15" y="-20.32" size="1.778" layer="96"/>
 </instance>
-<instance part="CC_DEBUG" gate="G$1" x="-6.35" y="41.91" smashed="yes">
+<instance part="CCD" gate="G$1" x="-6.35" y="41.91" smashed="yes">
 <attribute name="NAME" x="-10.16" y="54.61" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="P+8" gate="G$1" x="1.27" y="54.61" smashed="yes">
@@ -15395,7 +15395,7 @@ With Ilim = 1A</text>
 <segment>
 <pinref part="GND38" gate="1" pin="GND"/>
 <wire x1="-17.78" y1="50.8" x2="-17.78" y2="52.07" width="0.1524" layer="91"/>
-<pinref part="CC_DEBUG" gate="G$1" pin="1"/>
+<pinref part="CCD" gate="G$1" pin="1"/>
 <wire x1="-17.78" y1="52.07" x2="-11.43" y2="52.07" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -15737,7 +15737,7 @@ With Ilim = 1A</text>
 <junction x="234.95" y="-186.69"/>
 </segment>
 <segment>
-<pinref part="CC_DEBUG" gate="G$1" pin="2"/>
+<pinref part="CCD" gate="G$1" pin="2"/>
 <wire x1="-1.27" y1="52.07" x2="1.27" y2="52.07" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="G$1" pin="3.3V"/>
 <wire x1="1.27" y1="52.07" x2="1.27" y2="54.61" width="0.1524" layer="91"/>
@@ -15922,7 +15922,7 @@ With Ilim = 1A</text>
 <pinref part="U1" gate="G$1" pin="MOSI"/>
 </segment>
 <segment>
-<pinref part="CC_DEBUG" gate="G$1" pin="8"/>
+<pinref part="CCD" gate="G$1" pin="8"/>
 <wire x1="-1.27" y1="36.83" x2="1.27" y2="36.83" width="0.1524" layer="91"/>
 <label x="1.27" y="36.83" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -15954,7 +15954,7 @@ With Ilim = 1A</text>
 <pinref part="U1" gate="G$1" pin="MISO"/>
 </segment>
 <segment>
-<pinref part="CC_DEBUG" gate="G$1" pin="10"/>
+<pinref part="CCD" gate="G$1" pin="10"/>
 <wire x1="-1.27" y1="31.75" x2="1.27" y2="31.75" width="0.1524" layer="91"/>
 <label x="1.27" y="31.75" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -16064,7 +16064,7 @@ With Ilim = 1A</text>
 <pinref part="L4" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="CC_DEBUG" gate="G$1" pin="7"/>
+<pinref part="CCD" gate="G$1" pin="7"/>
 <wire x1="-11.43" y1="36.83" x2="-13.97" y2="36.83" width="0.1524" layer="91"/>
 <label x="-13.97" y="36.83" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -16159,7 +16159,7 @@ With Ilim = 1A</text>
 <pinref part="U1" gate="G$1" pin="CSN"/>
 </segment>
 <segment>
-<pinref part="CC_DEBUG" gate="G$1" pin="5"/>
+<pinref part="CCD" gate="G$1" pin="5"/>
 <wire x1="-11.43" y1="41.91" x2="-13.97" y2="41.91" width="0.1524" layer="91"/>
 <label x="-13.97" y="41.91" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -16188,7 +16188,7 @@ With Ilim = 1A</text>
 <pinref part="U1" gate="G$1" pin="SCLK"/>
 </segment>
 <segment>
-<pinref part="CC_DEBUG" gate="G$1" pin="6"/>
+<pinref part="CCD" gate="G$1" pin="6"/>
 <wire x1="-1.27" y1="41.91" x2="1.27" y2="41.91" width="0.1524" layer="91"/>
 <label x="1.27" y="41.91" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -16317,7 +16317,7 @@ With Ilim = 1A</text>
 <net name="N$50" class="0">
 <segment>
 <pinref part="EXT" gate="G$1" pin="1"/>
-<pinref part="CC_DEBUG" gate="G$1" pin="9"/>
+<pinref part="CCD" gate="G$1" pin="9"/>
 <wire x1="-26.67" y1="31.75" x2="-11.43" y2="31.75" width="0.1524" layer="91"/>
 </segment>
 </net>
