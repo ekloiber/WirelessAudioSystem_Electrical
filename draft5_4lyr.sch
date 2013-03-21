@@ -15945,11 +15945,19 @@ With Ilim = 1A</text>
 <pinref part="U1" gate="G$1" pin="USBP"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="USB_SENSE" class="0">
 <segment>
 <wire x1="-167.64" y1="-29.21" x2="-165.1" y2="-29.21" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="AD2/GIO9"/>
+<wire x1="-165.1" y1="-29.21" x2="-165.1" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-165.1" y="-29.21"/>
+<label x="-165.1" y="-35.56" size="1.778" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U7" gate="D" pin="PD6"/>
+<wire x1="600.71" y1="-273.05" x2="595.63" y2="-273.05" width="0.1524" layer="91"/>
+<label x="595.63" y="-273.05" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
