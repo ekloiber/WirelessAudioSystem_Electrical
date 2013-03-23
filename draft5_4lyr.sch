@@ -18029,7 +18029,6 @@ With Ilim = 1A</text>
 <label x="335.28" y="-288.29" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<<<<<<< HEAD
 <net name="TMS" class="0">
 <segment>
 <pinref part="U7" gate="B" pin="PB31"/>
@@ -18088,48 +18087,6 @@ With Ilim = 1A</text>
 <wire x1="434.34" y1="-447.04" x2="458.47" y2="-447.04" width="0.1524" layer="91"/>
 <junction x="434.34" y="-447.04"/>
 <label x="458.47" y="-447.04" size="1.778" layer="95" xref="yes"/>
-=======
-<net name="M_BCLK" class="0">
-<segment>
-<pinref part="U7" gate="A" pin="PA14"/>
-<wire x1="342.9" y1="-313.69" x2="337.82" y2="-313.69" width="0.1524" layer="91"/>
-<label x="337.82" y="-313.69" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M_WCLK" class="0">
-<segment>
-<pinref part="U7" gate="A" pin="PA15"/>
-<wire x1="342.9" y1="-318.77" x2="337.82" y2="-318.77" width="0.1524" layer="91"/>
-<label x="337.82" y="-318.77" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M_DOUT/S_DOUT" class="0">
-<segment>
-<pinref part="U7" gate="A" pin="PA16"/>
-<wire x1="342.9" y1="-323.85" x2="337.82" y2="-323.85" width="0.1524" layer="91"/>
-<label x="337.82" y="-323.85" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="M_DIN/S_DIN" class="0">
-<segment>
-<pinref part="U7" gate="B" pin="PB18"/>
-<wire x1="434.34" y1="-334.01" x2="427.99" y2="-334.01" width="0.1524" layer="91"/>
-<label x="427.99" y="-334.01" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="S_WCLK" class="0">
-<segment>
-<pinref part="U7" gate="B" pin="PB17"/>
-<wire x1="434.34" y1="-328.93" x2="427.99" y2="-328.93" width="0.1524" layer="91"/>
-<label x="427.99" y="-328.93" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="S_BCLK" class="0">
-<segment>
-<pinref part="U7" gate="B" pin="PB19"/>
-<wire x1="434.34" y1="-339.09" x2="427.99" y2="-339.09" width="0.1524" layer="91"/>
-<label x="427.99" y="-339.09" size="1.778" layer="95" rot="R180" xref="yes"/>
->>>>>>> Added I2S support for microcontroller
 </segment>
 </net>
 </nets>
