@@ -14172,6 +14172,130 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Passives (1)">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SJ_2S">
+<description>Small solder jumper with big paste layer so it will short during reflow.</description>
+<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.1524" layer="21"/>
+<wire x1="0.8" y1="1" x2="1.1" y2="0.75" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1" y1="0.75" x2="-0.8" y2="1" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1" y1="-0.75" x2="-0.8" y2="-1" width="0.1524" layer="21" curve="90.114706"/>
+<wire x1="0.8" y1="-1" x2="1.1" y2="-0.75" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.1" y1="-0.75" x2="1.1" y2="0.75" width="0.1524" layer="21"/>
+<wire x1="-1.1" y1="-0.75" x2="-1.1" y2="0.75" width="0.1524" layer="21"/>
+<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.1524" layer="21"/>
+<smd name="1" x="-0.4119" y="0" dx="0.635" dy="1.27" layer="1"/>
+<smd name="2" x="0.4119" y="0" dx="0.635" dy="1.27" layer="1"/>
+<text x="-0.9498" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9498" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2192" y1="-1.143" x2="1.2192" y2="1.143" layer="31"/>
+</package>
+<package name="SJ_2S-TRACE">
+<description>Solder jumper, small, shorted with trace. No paste layer. Trace is cuttable.</description>
+<wire x1="0.8255" y1="-1.016" x2="-0.8255" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="0.8255" y1="1.016" x2="1.0795" y2="0.762" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.0795" y1="0.762" x2="-0.8255" y2="1.016" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1.0795" y1="-0.762" x2="-0.8255" y2="-1.016" width="0.2032" layer="21" curve="90"/>
+<wire x1="0.8255" y1="-1.016" x2="1.0795" y2="-0.762" width="0.2032" layer="21" curve="90"/>
+<wire x1="-0.8255" y1="1.016" x2="0.8255" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="-0.381" y1="0" x2="0.381" y2="0" width="0.2032" layer="1"/>
+<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="SJ_2S-NOTRACE">
+<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90.076445"/>
+<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90.03821"/>
+<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90.03821"/>
+<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90.03821"/>
+<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.4009" y="0" dx="0.635" dy="1.27" layer="1" rot="R180" cream="no"/>
+<smd name="2" x="0.4127" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" layer="31"/>
+</package>
+<package name="SJ_2S-NO">
+<description>Small solder jumper with no paste layer so it will open after reflow.</description>
+<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90"/>
+<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90"/>
+<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
+<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="SJ">
+<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SOLDERJUMPER" prefix="SJ">
+<description>&lt;b&gt;Solder Jumper&lt;/b&gt;
+Standard SMD solder jumper. Used to automate production. Two varients : Normally Open and Normally Closed are the same, but have different paste layers. NC will have a large amount of paste and should jumper during reflow.</description>
+<gates>
+<gate name="1" symbol="SJ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="NC" package="SJ_2S">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TRACE" package="SJ_2S-TRACE">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NC2" package="SJ_2S-NOTRACE">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NO" package="SJ_2S-NO">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -14290,7 +14414,6 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <part name="P+23" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="R17" library="rcl" deviceset="R-US_" device="R0603" value="0"/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
-<part name="EXT" library="rcl" deviceset="R-US_" device="R0603" value="0"/>
 <part name="P+5" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="U6" library="00-EvaLibrary" deviceset="LTC4088-1/2" device="" value="LTC4088-2"/>
 <part name="CHARGE" library="SparkFun-LED" deviceset="LED" device="1206"/>
@@ -14453,6 +14576,11 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <part name="R45" library="rcl" deviceset="R-US_" device="R0603" value="100K"/>
 <part name="R46" library="rcl" deviceset="R-US_" device="R0603" value="100K"/>
 <part name="GND55" library="SparkFun" deviceset="GND" device=""/>
+<part name="SJ1" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
+<part name="SJ2" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
+<part name="SJ3" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
+<part name="SJ4" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
+<part name="EXT" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14862,10 +14990,6 @@ With Ilim = 1A</text>
 </instance>
 <instance part="GND12" gate="1" x="-222.25" y="-171.45" smashed="yes">
 <attribute name="VALUE" x="-224.79" y="-173.99" size="1.778" layer="96"/>
-</instance>
-<instance part="EXT" gate="G$1" x="-31.75" y="31.75" smashed="yes" rot="R180">
-<attribute name="NAME" x="-34.29" y="33.2486" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-33.02" y="28.448" size="1.778" layer="96"/>
 </instance>
 <instance part="P+5" gate="G$1" x="-45.72" y="31.75" smashed="yes">
 <attribute name="VALUE" x="-46.736" y="35.306" size="1.778" layer="96"/>
@@ -15337,6 +15461,11 @@ With Ilim = 1A</text>
 <instance part="GND55" gate="1" x="406.4" y="-469.9" smashed="yes">
 <attribute name="VALUE" x="403.86" y="-472.44" size="1.778" layer="96"/>
 </instance>
+<instance part="SJ1" gate="1" x="251.46" y="-307.34"/>
+<instance part="SJ2" gate="1" x="251.46" y="-313.69"/>
+<instance part="SJ3" gate="1" x="251.46" y="-320.04"/>
+<instance part="SJ4" gate="1" x="251.46" y="-326.39"/>
+<instance part="EXT" gate="1" x="-31.75" y="31.75"/>
 </instances>
 <busses>
 </busses>
@@ -15780,9 +15909,9 @@ With Ilim = 1A</text>
 <wire x1="1.27" y1="52.07" x2="1.27" y2="54.61" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="EXT" gate="G$1" pin="2"/>
 <pinref part="P+5" gate="G$1" pin="3.3V"/>
 <wire x1="-45.72" y1="31.75" x2="-36.83" y2="31.75" width="0.1524" layer="91"/>
+<pinref part="EXT" gate="1" pin="1"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="G$1" pin="3.3V"/>
@@ -16089,6 +16218,11 @@ With Ilim = 1A</text>
 <wire x1="-163.83" y1="-91.44" x2="-163.83" y2="-88.9" width="0.1524" layer="91"/>
 <label x="-163.83" y="-88.9" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="SJ1" gate="1" pin="1"/>
+<wire x1="246.38" y1="-307.34" x2="243.84" y2="-307.34" width="0.1524" layer="91"/>
+<label x="243.84" y="-307.34" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="WCLK" class="0">
 <segment>
@@ -16100,6 +16234,11 @@ With Ilim = 1A</text>
 <pinref part="U3" gate="G$1" pin="WCLK"/>
 <wire x1="-158.75" y1="-91.44" x2="-158.75" y2="-88.9" width="0.1524" layer="91"/>
 <label x="-158.75" y="-88.9" size="1.778" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SJ2" gate="1" pin="1"/>
+<wire x1="246.38" y1="-313.69" x2="243.84" y2="-313.69" width="0.1524" layer="91"/>
+<label x="243.84" y="-313.69" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="RESET_CC8531" class="0">
@@ -16144,6 +16283,11 @@ With Ilim = 1A</text>
 <label x="-190.5" y="-24.13" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="L13" gate="G$1" pin="1"/>
 </segment>
+<segment>
+<pinref part="SJ3" gate="1" pin="1"/>
+<wire x1="246.38" y1="-320.04" x2="243.84" y2="-320.04" width="0.1524" layer="91"/>
+<label x="243.84" y="-320.04" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="DOUT" class="0">
 <segment>
@@ -16155,6 +16299,11 @@ With Ilim = 1A</text>
 <wire x1="-180.34" y1="-19.05" x2="-190.5" y2="-19.05" width="0.1524" layer="91"/>
 <label x="-190.5" y="-19.05" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="L11" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="SJ4" gate="1" pin="1"/>
+<wire x1="246.38" y1="-326.39" x2="243.84" y2="-326.39" width="0.1524" layer="91"/>
+<label x="243.84" y="-326.39" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="REF" class="0">
@@ -16361,9 +16510,9 @@ With Ilim = 1A</text>
 </net>
 <net name="N$50" class="0">
 <segment>
-<pinref part="EXT" gate="G$1" pin="1"/>
 <pinref part="CC_DEBUG" gate="G$1" pin="9"/>
 <wire x1="-26.67" y1="31.75" x2="-11.43" y2="31.75" width="0.1524" layer="91"/>
+<pinref part="EXT" gate="1" pin="2"/>
 </segment>
 </net>
 <net name="VBUS" class="1">
@@ -18089,18 +18238,16 @@ With Ilim = 1A</text>
 <label x="458.47" y="-447.04" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="M_BLCK" class="0">
-<segment>
-<pinref part="U7" gate="A" pin="PA14"/>
-<wire x1="342.9" y1="-313.69" x2="337.82" y2="-313.69" width="0.1524" layer="91"/>
-<label x="337.82" y="-313.69" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="M_WCLK" class="0">
 <segment>
 <pinref part="U7" gate="A" pin="PA15"/>
 <wire x1="342.9" y1="-318.77" x2="337.82" y2="-318.77" width="0.1524" layer="91"/>
 <label x="337.82" y="-318.77" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SJ2" gate="1" pin="2"/>
+<wire x1="256.54" y1="-313.69" x2="259.08" y2="-313.69" width="0.1524" layer="91"/>
+<label x="259.08" y="-313.69" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="M_DOUT/S_DIN" class="0">
@@ -18108,6 +18255,11 @@ With Ilim = 1A</text>
 <pinref part="U7" gate="A" pin="PA16"/>
 <wire x1="342.9" y1="-323.85" x2="337.82" y2="-323.85" width="0.1524" layer="91"/>
 <label x="337.82" y="-323.85" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="SJ3" gate="1" pin="2"/>
+<wire x1="256.54" y1="-320.04" x2="259.08" y2="-320.04" width="0.1524" layer="91"/>
+<label x="259.08" y="-320.04" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="S_WCLK" class="0">
@@ -18123,12 +18275,29 @@ With Ilim = 1A</text>
 <wire x1="434.34" y1="-334.01" x2="427.99" y2="-334.01" width="0.1524" layer="91"/>
 <label x="427.99" y="-334.01" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="SJ4" gate="1" pin="2"/>
+<wire x1="256.54" y1="-326.39" x2="259.08" y2="-326.39" width="0.1524" layer="91"/>
+<label x="259.08" y="-326.39" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="S_BCLK" class="0">
 <segment>
 <pinref part="U7" gate="B" pin="PB19"/>
 <wire x1="434.34" y1="-339.09" x2="427.99" y2="-339.09" width="0.1524" layer="91"/>
 <label x="427.99" y="-339.09" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="M_BCLK" class="0">
+<segment>
+<pinref part="SJ1" gate="1" pin="2"/>
+<wire x1="256.54" y1="-307.34" x2="259.08" y2="-307.34" width="0.1524" layer="91"/>
+<label x="259.08" y="-307.34" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U7" gate="A" pin="PA14"/>
+<wire x1="342.9" y1="-313.69" x2="337.82" y2="-313.69" width="0.1524" layer="91"/>
+<label x="337.82" y="-313.69" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

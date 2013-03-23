@@ -15954,6 +15954,11 @@ With Ilim = 1A</text>
 <junction x="-165.1" y="-29.21"/>
 <label x="-165.1" y="-35.56" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U7" gate="D" pin="PD6"/>
+<wire x1="600.71" y1="-273.05" x2="595.63" y2="-273.05" width="0.1524" layer="91"/>
+<label x="595.63" y="-273.05" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>

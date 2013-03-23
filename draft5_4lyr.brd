@@ -5931,6 +5931,24 @@ design rules under a new name.</description>
 <wire x1="6.27" y1="50.75" x2="6.25" y2="50.77" width="0.2" layer="1"/>
 <wire x1="11" y1="50.75" x2="7" y2="50.75" width="0.2" layer="1"/>
 </signal>
+<signal name="M_BLCK">
+<contactref element="U7" pad="7"/>
+</signal>
+<signal name="M_WCLK">
+<contactref element="U7" pad="8"/>
+</signal>
+<signal name="M_DOUT/S_DIN">
+<contactref element="U7" pad="78"/>
+</signal>
+<signal name="S_WCLK">
+<contactref element="U7" pad="88"/>
+</signal>
+<signal name="M_DIN/S_DOUT">
+<contactref element="U7" pad="89"/>
+</signal>
+<signal name="S_BCLK">
+<contactref element="U7" pad="90"/>
+</signal>
 </signals>
 </board>
 </drawing>

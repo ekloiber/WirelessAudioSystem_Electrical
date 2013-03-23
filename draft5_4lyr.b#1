@@ -2507,7 +2507,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="31.5" y="41.75" size="0.82" layer="25" ratio="10"/>
 </element>
 <element name="C13" library="rcl" package="C0603" value="47p" x="36.25" y="42.75" smashed="yes" rot="R270">
-<attribute name="NAME" x="35.25" y="44.75" size="0.82" layer="25" ratio="10"/>
+<attribute name="NAME" x="35.25" y="44.5" size="0.82" layer="25" ratio="10"/>
 </element>
 <element name="R2" library="rcl" package="R0603" value="33" x="31.75" y="43.75" smashed="yes" rot="R180">
 <attribute name="NAME" x="28.75" y="43.25" size="0.82" layer="25" ratio="10"/>
@@ -2612,7 +2612,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="32.5" y="49.75" size="0.82" layer="25" ratio="10" rot="R180"/>
 </element>
 <element name="C3" library="rcl" package="C0603" value="1u" x="34.5" y="47.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="35.365" y="46.385" size="0.82" layer="25" ratio="10"/>
+<attribute name="NAME" x="35.5" y="46.5" size="0.82" layer="25" ratio="10"/>
 </element>
 <element name="R17" library="rcl" package="R0603" value="0" x="32" y="28" smashed="yes" rot="R270">
 <attribute name="NAME" x="33.25" y="30.5" size="0.82" layer="25" ratio="10" rot="R180"/>

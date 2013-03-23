@@ -3602,6 +3602,8 @@ design rules under a new name.</description>
 <wire x1="42.75" y1="54.75" x2="42.5" y2="54.5" width="0.2" layer="1"/>
 <wire x1="42.5" y1="54.5" x2="42.5" y2="54" width="0.2" layer="1"/>
 <wire x1="42.5" y1="54" x2="42.25" y2="53.75" width="0.2" layer="1"/>
+<contactref element="U7" pad="19"/>
+<wire x1="25.65" y1="32.25" x2="41.5" y2="53.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="U1" pad="5"/>
@@ -3982,10 +3984,8 @@ design rules under a new name.</description>
 <wire x1="36.5" y1="35.5" x2="35.5" y2="34.5" width="0.2" layer="16"/>
 <wire x1="35.5" y1="34.5" x2="35.5" y2="34" width="0.2" layer="16"/>
 <wire x1="35.5" y1="34" x2="34.75" y2="33.25" width="0.2" layer="16"/>
-<wire x1="34.75" y1="33.25" x2="24.5" y2="33.25" width="0.2" layer="16"/>
-<wire x1="24.5" y1="33.25" x2="23" y2="31.75" width="0.2" layer="16"/>
-<wire x1="23" y1="31.75" x2="23" y2="25" width="0.2" layer="16"/>
-<wire x1="23" y1="25" x2="21.5" y2="23.5" width="0.2" layer="16"/>
+<wire x1="34.75" y1="33.25" x2="31.25" y2="33.25" width="0.2" layer="16"/>
+<wire x1="31.25" y1="33.25" x2="21.5" y2="23.5" width="0.2" layer="16"/>
 <wire x1="39.5" y1="33.975" x2="39.025" y2="33.975" width="0.2" layer="1"/>
 <wire x1="39.025" y1="33.975" x2="38.5" y2="34.5" width="0.2" layer="1"/>
 <wire x1="38.5" y1="34.5" x2="38.5" y2="39" width="0.2" layer="1"/>
