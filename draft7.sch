@@ -14412,7 +14412,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="GND35" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+23" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="R17" library="rcl" deviceset="R-US_" device="R0603" value="0"/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+5" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="U6" library="00-EvaLibrary" deviceset="LTC4088-1/2" device="" value="LTC4088-2"/>
@@ -14476,10 +14475,6 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="F1" library="00-EvaLibrary" deviceset="PTC_FUSE" device="" value="2A"/>
 <part name="U5" library="00-EvaLibrary" deviceset="MCP1826" device="-SOT223"/>
 <part name="GND71" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R27" library="00-EvaLibrary" deviceset="R-US_" device="R0603" value="0"/>
-<part name="R28" library="00-EvaLibrary" deviceset="R-US_" device="R0603" value="0"/>
-<part name="R29" library="00-EvaLibrary" deviceset="R-US_" device="R0603" value="0"/>
-<part name="R30" library="00-EvaLibrary" deviceset="R-US_" device="R0603" value="0"/>
 <part name="BATTERY" library="00-EvaLibrary" deviceset="BATTERY" device="-LIPO-JST"/>
 <part name="GND62" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LINE_IN" library="00-EvaLibrary" deviceset="PHONE_SW" device="-STX-35332-5N"/>
@@ -14576,11 +14571,18 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <part name="R45" library="rcl" deviceset="R-US_" device="R0603" value="100K"/>
 <part name="R46" library="rcl" deviceset="R-US_" device="R0603" value="100K"/>
 <part name="GND55" library="SparkFun" deviceset="GND" device=""/>
-<part name="SJ1" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
-<part name="SJ2" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
-<part name="SJ3" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
-<part name="SJ4" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
+<part name="BCLK" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
+<part name="WCLK" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
+<part name="DOUT" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
+<part name="DIN" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
 <part name="EXT" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
+<part name="AGND" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
+<part name="LINE_L" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
+<part name="PHONE_L" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
+<part name="LINE_R" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
+<part name="PHONE_R" library="SparkFun-Passives (1)" deviceset="SOLDERJUMPER" device="NO" value=""/>
+<part name="C70" library="rcl" deviceset="C-EU" device="C0603" value="0.47u"/>
+<part name="C71" library="rcl" deviceset="C-EU" device="C0603" value="0.47u"/>
 </parts>
 <sheets>
 <sheet>
@@ -14984,10 +14986,6 @@ With Ilim = 1A</text>
 <instance part="P+23" gate="G$1" x="177.8" y="116.84" smashed="yes">
 <attribute name="VALUE" x="176.784" y="120.396" size="1.778" layer="96"/>
 </instance>
-<instance part="R17" gate="G$1" x="-222.25" y="-161.29" smashed="yes" rot="R90">
-<attribute name="NAME" x="-218.44" y="-161.0614" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-218.44" y="-163.322" size="1.778" layer="96"/>
-</instance>
 <instance part="GND12" gate="1" x="-222.25" y="-171.45" smashed="yes">
 <attribute name="VALUE" x="-224.79" y="-173.99" size="1.778" layer="96"/>
 </instance>
@@ -15063,13 +15061,13 @@ With Ilim = 1A</text>
 <attribute name="NAME" x="-22.86" y="-159.893" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-22.86" y="-163.957" size="1.778" layer="96"/>
 </instance>
-<instance part="R16" gate="G$1" x="-63.5" y="-207.01" smashed="yes" rot="R180">
-<attribute name="NAME" x="-66.04" y="-205.74" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-64.77" y="-210.82" size="1.778" layer="96"/>
+<instance part="R16" gate="G$1" x="-58.42" y="-207.01" smashed="yes" rot="R180">
+<attribute name="NAME" x="-60.96" y="-205.74" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-59.69" y="-210.82" size="1.778" layer="96"/>
 </instance>
-<instance part="R13" gate="G$1" x="-62.23" y="-176.53" smashed="yes" rot="R180">
-<attribute name="NAME" x="-64.77" y="-175.26" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-63.5" y="-180.34" size="1.778" layer="96"/>
+<instance part="R13" gate="G$1" x="-57.15" y="-176.53" smashed="yes" rot="R180">
+<attribute name="NAME" x="-59.69" y="-175.26" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-58.42" y="-180.34" size="1.778" layer="96"/>
 </instance>
 <instance part="R15" gate="G$1" x="-33.02" y="-229.87" smashed="yes" rot="R180">
 <attribute name="NAME" x="-35.56" y="-228.6" size="1.778" layer="95"/>
@@ -15219,22 +15217,6 @@ With Ilim = 1A</text>
 </instance>
 <instance part="GND71" gate="G$1" x="95.25" y="-204.47" smashed="yes">
 <attribute name="VALUE" x="92.71" y="-207.01" size="1.778" layer="96"/>
-</instance>
-<instance part="R27" gate="G$1" x="-76.2" y="-172.72" smashed="yes">
-<attribute name="NAME" x="-78.74" y="-171.2214" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-77.47" y="-176.022" size="1.778" layer="96"/>
-</instance>
-<instance part="R28" gate="G$1" x="-76.2" y="-180.34" smashed="yes">
-<attribute name="NAME" x="-78.74" y="-178.8414" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-77.47" y="-183.642" size="1.778" layer="96"/>
-</instance>
-<instance part="R29" gate="G$1" x="-77.47" y="-203.2" smashed="yes">
-<attribute name="NAME" x="-80.01" y="-201.7014" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-78.74" y="-206.502" size="1.778" layer="96"/>
-</instance>
-<instance part="R30" gate="G$1" x="-77.47" y="-210.82" smashed="yes">
-<attribute name="NAME" x="-80.01" y="-209.3214" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-78.74" y="-214.122" size="1.778" layer="96"/>
 </instance>
 <instance part="BATTERY" gate="G$1" x="153.67" y="-214.63" smashed="yes"/>
 <instance part="GND62" gate="G$1" x="153.67" y="-229.87" smashed="yes">
@@ -15461,11 +15443,24 @@ With Ilim = 1A</text>
 <instance part="GND55" gate="1" x="406.4" y="-469.9" smashed="yes">
 <attribute name="VALUE" x="403.86" y="-472.44" size="1.778" layer="96"/>
 </instance>
-<instance part="SJ1" gate="1" x="251.46" y="-307.34"/>
-<instance part="SJ2" gate="1" x="251.46" y="-313.69"/>
-<instance part="SJ3" gate="1" x="251.46" y="-320.04"/>
-<instance part="SJ4" gate="1" x="251.46" y="-326.39"/>
+<instance part="BCLK" gate="1" x="251.46" y="-307.34"/>
+<instance part="WCLK" gate="1" x="251.46" y="-313.69"/>
+<instance part="DOUT" gate="1" x="251.46" y="-320.04"/>
+<instance part="DIN" gate="1" x="251.46" y="-326.39"/>
 <instance part="EXT" gate="1" x="-31.75" y="31.75"/>
+<instance part="AGND" gate="1" x="-222.25" y="-161.29" rot="R90"/>
+<instance part="LINE_L" gate="1" x="-76.2" y="-172.72"/>
+<instance part="PHONE_L" gate="1" x="-76.2" y="-180.34"/>
+<instance part="LINE_R" gate="1" x="-77.47" y="-203.2"/>
+<instance part="PHONE_R" gate="1" x="-77.47" y="-210.82"/>
+<instance part="C70" gate="G$1" x="-67.31" y="-176.53" smashed="yes" rot="R90">
+<attribute name="NAME" x="-68.072" y="-174.371" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-68.072" y="-180.975" size="1.778" layer="96"/>
+</instance>
+<instance part="C71" gate="G$1" x="-68.58" y="-207.01" smashed="yes" rot="R90">
+<attribute name="NAME" x="-69.342" y="-204.851" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-69.342" y="-211.455" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15612,9 +15607,9 @@ With Ilim = 1A</text>
 <pinref part="GND23" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="-222.25" y1="-166.37" x2="-222.25" y2="-168.91" width="0.1524" layer="91"/>
+<pinref part="AGND" gate="1" pin="1"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
@@ -16219,7 +16214,7 @@ With Ilim = 1A</text>
 <label x="-163.83" y="-88.9" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SJ1" gate="1" pin="1"/>
+<pinref part="BCLK" gate="1" pin="1"/>
 <wire x1="246.38" y1="-307.34" x2="243.84" y2="-307.34" width="0.1524" layer="91"/>
 <label x="243.84" y="-307.34" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -16236,7 +16231,7 @@ With Ilim = 1A</text>
 <label x="-158.75" y="-88.9" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SJ2" gate="1" pin="1"/>
+<pinref part="WCLK" gate="1" pin="1"/>
 <wire x1="246.38" y1="-313.69" x2="243.84" y2="-313.69" width="0.1524" layer="91"/>
 <label x="243.84" y="-313.69" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -16284,7 +16279,7 @@ With Ilim = 1A</text>
 <pinref part="L13" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="SJ3" gate="1" pin="1"/>
+<pinref part="DOUT" gate="1" pin="1"/>
 <wire x1="246.38" y1="-320.04" x2="243.84" y2="-320.04" width="0.1524" layer="91"/>
 <label x="243.84" y="-320.04" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -16301,7 +16296,7 @@ With Ilim = 1A</text>
 <pinref part="L11" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="SJ4" gate="1" pin="1"/>
+<pinref part="DIN" gate="1" pin="1"/>
 <wire x1="246.38" y1="-326.39" x2="243.84" y2="-326.39" width="0.1524" layer="91"/>
 <label x="243.84" y="-326.39" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -16447,10 +16442,10 @@ With Ilim = 1A</text>
 <pinref part="LINE_IN" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="-222.25" y1="-156.21" x2="-222.25" y2="-153.67" width="0.1524" layer="91"/>
 <wire x1="-222.25" y1="-153.67" x2="-215.9" y2="-153.67" width="0.1524" layer="91"/>
 <label x="-220.98" y="-152.4" size="1.778" layer="95"/>
+<pinref part="AGND" gate="1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C34" gate="G$1" pin="2"/>
@@ -16675,7 +16670,7 @@ With Ilim = 1A</text>
 <net name="N$53" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
-<wire x1="-57.15" y1="-176.53" x2="-48.26" y2="-176.53" width="0.1524" layer="91"/>
+<wire x1="-52.07" y1="-176.53" x2="-48.26" y2="-176.53" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="-48.26" y1="-176.53" x2="-45.72" y2="-176.53" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-149.86" x2="-48.26" y2="-149.86" width="0.1524" layer="91"/>
@@ -16687,7 +16682,7 @@ With Ilim = 1A</text>
 <net name="N$54" class="0">
 <segment>
 <pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="-58.42" y1="-207.01" x2="-48.26" y2="-207.01" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-207.01" x2="-48.26" y2="-207.01" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="-48.26" y1="-207.01" x2="-45.72" y2="-207.01" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="-229.87" x2="-48.26" y2="-229.87" width="0.1524" layer="91"/>
@@ -17122,9 +17117,9 @@ With Ilim = 1A</text>
 <label x="-130.81" y="-109.22" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R27" gate="G$1" pin="1"/>
 <wire x1="-81.28" y1="-172.72" x2="-83.82" y2="-172.72" width="0.1524" layer="91"/>
 <label x="-83.82" y="-172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="LINE_L" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="LINE_R" class="0">
@@ -17134,9 +17129,9 @@ With Ilim = 1A</text>
 <label x="-130.81" y="-114.3" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R29" gate="G$1" pin="1"/>
 <wire x1="-82.55" y1="-203.2" x2="-85.09" y2="-203.2" width="0.1524" layer="91"/>
 <label x="-85.09" y="-203.2" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="LINE_R" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="PHONE_R" class="0">
@@ -17146,9 +17141,9 @@ With Ilim = 1A</text>
 <label x="-189.23" y="-172.72" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R30" gate="G$1" pin="1"/>
 <wire x1="-82.55" y1="-210.82" x2="-85.09" y2="-210.82" width="0.1524" layer="91"/>
 <label x="-85.09" y="-210.82" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="PHONE_R" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="PHONE_L" class="0">
@@ -17158,9 +17153,9 @@ With Ilim = 1A</text>
 <label x="-184.15" y="-172.72" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R28" gate="G$1" pin="1"/>
 <wire x1="-81.28" y1="-180.34" x2="-83.82" y2="-180.34" width="0.1524" layer="91"/>
 <label x="-83.82" y="-180.34" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="PHONE_L" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="IN_L" class="0">
@@ -17209,27 +17204,25 @@ With Ilim = 1A</text>
 </net>
 <net name="N$43" class="0">
 <segment>
-<pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="-67.31" y1="-176.53" x2="-69.85" y2="-176.53" width="0.1524" layer="91"/>
-<pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="-71.12" y1="-172.72" x2="-69.85" y2="-172.72" width="0.1524" layer="91"/>
 <wire x1="-69.85" y1="-172.72" x2="-69.85" y2="-176.53" width="0.1524" layer="91"/>
 <wire x1="-69.85" y1="-176.53" x2="-69.85" y2="-180.34" width="0.1524" layer="91"/>
-<junction x="-69.85" y="-176.53"/>
-<pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="-69.85" y1="-180.34" x2="-71.12" y2="-180.34" width="0.1524" layer="91"/>
+<pinref part="LINE_L" gate="1" pin="2"/>
+<pinref part="PHONE_L" gate="1" pin="2"/>
+<pinref part="C70" gate="G$1" pin="1"/>
+<junction x="-69.85" y="-176.53"/>
 </segment>
 </net>
 <net name="N$45" class="0">
 <segment>
-<pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="-72.39" y1="-203.2" x2="-71.12" y2="-203.2" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="-203.2" x2="-71.12" y2="-207.01" width="0.1524" layer="91"/>
-<pinref part="R30" gate="G$1" pin="2"/>
 <wire x1="-71.12" y1="-207.01" x2="-71.12" y2="-210.82" width="0.1524" layer="91"/>
 <wire x1="-71.12" y1="-210.82" x2="-72.39" y2="-210.82" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="-68.58" y1="-207.01" x2="-71.12" y2="-207.01" width="0.1524" layer="91"/>
+<pinref part="PHONE_R" gate="1" pin="2"/>
+<pinref part="LINE_R" gate="1" pin="2"/>
+<pinref part="C71" gate="G$1" pin="1"/>
 <junction x="-71.12" y="-207.01"/>
 </segment>
 </net>
@@ -18245,7 +18238,7 @@ With Ilim = 1A</text>
 <label x="337.82" y="-318.77" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SJ2" gate="1" pin="2"/>
+<pinref part="WCLK" gate="1" pin="2"/>
 <wire x1="256.54" y1="-313.69" x2="259.08" y2="-313.69" width="0.1524" layer="91"/>
 <label x="259.08" y="-313.69" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -18257,7 +18250,7 @@ With Ilim = 1A</text>
 <label x="337.82" y="-323.85" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SJ3" gate="1" pin="2"/>
+<pinref part="DOUT" gate="1" pin="2"/>
 <wire x1="256.54" y1="-320.04" x2="259.08" y2="-320.04" width="0.1524" layer="91"/>
 <label x="259.08" y="-320.04" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -18276,7 +18269,7 @@ With Ilim = 1A</text>
 <label x="427.99" y="-334.01" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SJ4" gate="1" pin="2"/>
+<pinref part="DIN" gate="1" pin="2"/>
 <wire x1="256.54" y1="-326.39" x2="259.08" y2="-326.39" width="0.1524" layer="91"/>
 <label x="259.08" y="-326.39" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -18290,7 +18283,7 @@ With Ilim = 1A</text>
 </net>
 <net name="M_BCLK" class="0">
 <segment>
-<pinref part="SJ1" gate="1" pin="2"/>
+<pinref part="BCLK" gate="1" pin="2"/>
 <wire x1="256.54" y1="-307.34" x2="259.08" y2="-307.34" width="0.1524" layer="91"/>
 <label x="259.08" y="-307.34" size="1.778" layer="95" xref="yes"/>
 </segment>
@@ -18298,6 +18291,18 @@ With Ilim = 1A</text>
 <pinref part="U7" gate="A" pin="PA14"/>
 <wire x1="342.9" y1="-313.69" x2="337.82" y2="-313.69" width="0.1524" layer="91"/>
 <label x="337.82" y="-313.69" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="C70" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="C71" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
