@@ -15650,9 +15650,9 @@ With Ilim = 1A</text>
 <label x="-13.97" y="36.83" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="431.8" y1="-274.32" x2="426.72" y2="-274.32" width="0.1524" layer="91"/>
-<label x="426.72" y="-274.32" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U4" gate="A" pin="PA07"/>
+<wire x1="431.8" y1="-269.24" x2="426.72" y2="-269.24" width="0.1524" layer="91"/>
+<label x="426.72" y="-269.24" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U4" gate="A" pin="PA06"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -15727,9 +15727,9 @@ With Ilim = 1A</text>
 <label x="-13.97" y="41.91" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="431.8" y1="-269.24" x2="426.72" y2="-269.24" width="0.1524" layer="91"/>
-<label x="426.72" y="-269.24" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U4" gate="A" pin="PA06"/>
+<wire x1="431.8" y1="-274.32" x2="426.72" y2="-274.32" width="0.1524" layer="91"/>
+<label x="426.72" y="-274.32" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U4" gate="A" pin="PA07"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -17485,9 +17485,9 @@ With Ilim = 1A</text>
 <label x="-137.16" y="-116.84" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="900.43" y1="-270.51" x2="905.51" y2="-270.51" width="0.1524" layer="91"/>
-<label x="905.51" y="-270.51" size="1.778" layer="95" xref="yes"/>
-<pinref part="U4" gate="X" pin="PX33"/>
+<pinref part="U4" gate="X" pin="PX31"/>
+<wire x1="900.43" y1="-260.35" x2="905.51" y2="-260.35" width="0.1524" layer="91"/>
+<label x="905.51" y="-260.35" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="!MUTE_R" class="0">
@@ -17497,9 +17497,9 @@ With Ilim = 1A</text>
 <label x="-137.16" y="-121.92" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U4" gate="X" pin="PX30"/>
-<wire x1="900.43" y1="-255.27" x2="905.51" y2="-255.27" width="0.1524" layer="91"/>
-<label x="905.51" y="-255.27" size="1.778" layer="95" xref="yes"/>
+<wire x1="900.43" y1="-270.51" x2="905.51" y2="-270.51" width="0.1524" layer="91"/>
+<label x="905.51" y="-270.51" size="1.778" layer="95" xref="yes"/>
+<pinref part="U4" gate="X" pin="PX33"/>
 </segment>
 </net>
 <net name="!MUTE_L" class="0">
@@ -17509,9 +17509,9 @@ With Ilim = 1A</text>
 <label x="-137.16" y="-127" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U4" gate="X" pin="PX31"/>
-<wire x1="900.43" y1="-260.35" x2="905.51" y2="-260.35" width="0.1524" layer="91"/>
-<label x="905.51" y="-260.35" size="1.778" layer="95" xref="yes"/>
+<pinref part="U4" gate="X" pin="PX30"/>
+<wire x1="900.43" y1="-255.27" x2="905.51" y2="-255.27" width="0.1524" layer="91"/>
+<label x="905.51" y="-255.27" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DGND" class="0">
