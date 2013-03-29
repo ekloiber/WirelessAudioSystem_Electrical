@@ -7581,37 +7581,6 @@ EBI-NANDWE MCI-CMD[1] </text>
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="3.3V">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="3.3V" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="3.3V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="rcl">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -14402,7 +14371,6 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <part name="TO_MAIN1" library="00-EvaLibrary" deviceset="HEADER-10P" device="-SMD-2MM-MALE"/>
 <part name="C65" library="rcl" deviceset="C-EU" device="C0603" value="2.2u"/>
 <part name="L18" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="BEAD"/>
-<part name="P+3" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="U9" library="00-EvaLibrary" deviceset="LM4881" device=""/>
 <part name="C33" library="rcl" deviceset="C-EU" device="C0603" value="1u"/>
 <part name="R31" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
@@ -14413,7 +14381,6 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <part name="TO_AUX2" library="00-EvaLibrary" deviceset="HEADER-10P" device="-SMD-2MM-FEMALE"/>
 <part name="C57" library="rcl" deviceset="C-EU" device="C0603" value="2.2u"/>
 <part name="L19" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="BEAD"/>
-<part name="P+9" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="R44" library="rcl" deviceset="R-US_" device="R0603" value="100"/>
 <part name="JTAG" library="00-EvaLibrary" deviceset="HEADER-10P" device="-SMD-MALE2"/>
 <part name="C70" library="rcl" deviceset="C-EU" device="C0603" value="470n"/>
@@ -14460,7 +14427,6 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <part name="U1" library="00-EvaLibrary" deviceset="CC85XX" device=""/>
 <part name="D3.3V3" library="00-EvaLibrary" deviceset="D3.3V" device=""/>
 <part name="D3.3V4" library="00-EvaLibrary" deviceset="D3.3V" device=""/>
-<part name="D3.3V5" library="00-EvaLibrary" deviceset="D3.3V" device=""/>
 <part name="DGND4" library="00-EvaLibrary" deviceset="DGND" device=""/>
 <part name="DGND5" library="00-EvaLibrary" deviceset="DGND" device=""/>
 <part name="DGND6" library="00-EvaLibrary" deviceset="DGND" device=""/>
@@ -14585,7 +14551,6 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <part name="DGND81" library="00-EvaLibrary" deviceset="DGND" device=""/>
 <part name="C102" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="DGND82" library="00-EvaLibrary" deviceset="DGND" device=""/>
-<part name="R11" library="00-EvaLibrary" deviceset="R-US_" device="R0603" value="0"/>
 <part name="SW2" library="00-EvaLibrary" deviceset="TOUCH_PAD" device="-CIRCLE-15MM" value="TOUCH_PAD-CIRCLE-15MM"/>
 <part name="SW3" library="00-EvaLibrary" deviceset="TOUCH_PAD" device="-CIRCLE-15MM" value="TOUCH_PAD-CIRCLE-15MM"/>
 <part name="C30" library="rcl" deviceset="C-EU" device="C0603" value="10n"/>
@@ -14598,6 +14563,8 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <part name="L5" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="6.8n"/>
 <part name="R26" library="00-EvaLibrary" deviceset="R-US_" device="R0603" value="0"/>
 <part name="AGND18" library="00-EvaLibrary" deviceset="AGND" device=""/>
+<part name="D3.3V5" library="00-EvaLibrary" deviceset="D3.3V" device=""/>
+<part name="D3.3V9" library="00-EvaLibrary" deviceset="D3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -15012,9 +14979,6 @@ With Ilim = 1A</text>
 <attribute name="NAME" x="384.81" y="-182.88" size="1.778" layer="95"/>
 <attribute name="VALUE" x="384.81" y="-185.42" size="1.778" layer="96"/>
 </instance>
-<instance part="P+3" gate="G$1" x="383.54" y="-175.26" smashed="yes">
-<attribute name="VALUE" x="382.524" y="-171.704" size="1.778" layer="96"/>
-</instance>
 <instance part="U9" gate="G$1" x="-35.56" y="-186.69"/>
 <instance part="C33" gate="G$1" x="-50.8" y="-196.85" smashed="yes">
 <attribute name="NAME" x="-49.53" y="-196.723" size="1.778" layer="95"/>
@@ -15036,9 +15000,6 @@ With Ilim = 1A</text>
 <instance part="L19" gate="G$1" x="334.01" y="-175.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="335.28" y="-175.26" size="1.778" layer="95"/>
 <attribute name="VALUE" x="335.28" y="-177.8" size="1.778" layer="96"/>
-</instance>
-<instance part="P+9" gate="G$1" x="334.01" y="-167.64" smashed="yes">
-<attribute name="VALUE" x="332.994" y="-164.084" size="1.778" layer="96"/>
 </instance>
 <instance part="R44" gate="G$1" x="613.41" y="-167.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="614.68" y="-166.37" size="1.778" layer="95"/>
@@ -15159,7 +15120,6 @@ With Ilim = 1A</text>
 <instance part="U1" gate="G$1" x="-139.7" y="13.97"/>
 <instance part="D3.3V3" gate="G$1" x="-53.34" y="99.06"/>
 <instance part="D3.3V4" gate="G$1" x="1.27" y="54.61"/>
-<instance part="D3.3V5" gate="G$1" x="-45.72" y="31.75"/>
 <instance part="DGND4" gate="G$1" x="-195.58" y="99.06"/>
 <instance part="DGND5" gate="G$1" x="-189.23" y="90.17"/>
 <instance part="DGND6" gate="G$1" x="-182.88" y="82.55"/>
@@ -15386,10 +15346,6 @@ With Ilim = 1A</text>
 <attribute name="VALUE" x="1014.73" y="-270.637" size="1.778" layer="96"/>
 </instance>
 <instance part="DGND82" gate="G$1" x="1012.19" y="-271.78"/>
-<instance part="R11" gate="G$1" x="-31.75" y="31.75" smashed="yes">
-<attribute name="NAME" x="-34.29" y="33.2486" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-34.29" y="28.448" size="1.778" layer="96"/>
-</instance>
 <instance part="SW2" gate="G$1" x="412.75" y="8.89"/>
 <instance part="SW3" gate="G$1" x="412.75" y="-5.08"/>
 <instance part="C30" gate="G$1" x="396.24" y="3.81" rot="R90"/>
@@ -15408,20 +15364,12 @@ With Ilim = 1A</text>
 <attribute name="VALUE" x="-195.58" y="-4.572" size="1.778" layer="96"/>
 </instance>
 <instance part="AGND18" gate="G$1" x="-35.56" y="-219.71"/>
+<instance part="D3.3V5" gate="G$1" x="334.01" y="-167.64"/>
+<instance part="D3.3V9" gate="G$1" x="383.54" y="-175.26"/>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="3.3V" class="1">
-<segment>
-<pinref part="L18" gate="G$1" pin="2"/>
-<pinref part="P+3" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="L19" gate="G$1" pin="2"/>
-<pinref part="P+9" gate="G$1" pin="3.3V"/>
-</segment>
-</net>
 <net name="PA_EN" class="0">
 <segment>
 <wire x1="-72.39" y1="-29.21" x2="-72.39" y2="-21.59" width="0.1524" layer="91"/>
@@ -15849,13 +15797,6 @@ With Ilim = 1A</text>
 <pinref part="AGND18" gate="G$1" pin="AGND"/>
 </segment>
 </net>
-<net name="N$50" class="0">
-<segment>
-<pinref part="CC_DEBUG" gate="G$1" pin="9"/>
-<wire x1="-26.67" y1="31.75" x2="-11.43" y2="31.75" width="0.1524" layer="91"/>
-<pinref part="R11" gate="G$1" pin="2"/>
-</segment>
-</net>
 <net name="VBUS" class="1">
 <segment>
 <label x="53.34" y="-185.42" size="1.778" layer="95"/>
@@ -16254,6 +16195,18 @@ With Ilim = 1A</text>
 <wire x1="-50.8" y1="-157.48" x2="-35.56" y2="-157.48" width="0.1524" layer="91"/>
 <junction x="-35.56" y="-157.48"/>
 </segment>
+<segment>
+<pinref part="C14" gate="G$1" pin="1"/>
+<pinref part="L21" gate="G$1" pin="1"/>
+<junction x="734.06" y="-196.85"/>
+<wire x1="734.06" y1="-196.85" x2="725.17" y2="-196.85" width="0.1524" layer="91"/>
+<pinref part="U4" gate="P" pin="VDDANA"/>
+<wire x1="725.17" y1="-196.85" x2="713.74" y2="-196.85" width="0.1524" layer="91"/>
+<wire x1="713.74" y1="-212.09" x2="713.74" y2="-196.85" width="0.1524" layer="91"/>
+<pinref part="C48" gate="G$1" pin="1"/>
+<junction x="725.17" y="-196.85"/>
+<label x="713.74" y="-195.58" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DVDD_CODEC" class="0">
 <segment>
@@ -16462,9 +16415,9 @@ With Ilim = 1A</text>
 <pinref part="TO_AUX1" gate="G$1" pin="9"/>
 </segment>
 <segment>
-<wire x1="900.43" y1="-382.27" x2="905.51" y2="-382.27" width="0.1524" layer="91"/>
-<label x="905.51" y="-382.27" size="1.778" layer="95" xref="yes"/>
-<pinref part="U4" gate="X" pin="PX55"/>
+<wire x1="755.65" y1="-316.23" x2="750.57" y2="-316.23" width="0.1524" layer="91"/>
+<label x="750.57" y="-316.23" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U4" gate="X" pin="PX12"/>
 </segment>
 </net>
 <net name="AUX_VDD" class="0">
@@ -16632,9 +16585,9 @@ With Ilim = 1A</text>
 <pinref part="TO_AUX1" gate="G$1" pin="7"/>
 </segment>
 <segment>
-<wire x1="755.65" y1="-361.95" x2="748.03" y2="-361.95" width="0.1524" layer="91"/>
-<label x="748.03" y="-361.95" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="U4" gate="X" pin="PX21"/>
+<wire x1="755.65" y1="-321.31" x2="748.03" y2="-321.31" width="0.1524" layer="91"/>
+<label x="748.03" y="-321.31" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U4" gate="X" pin="PX13"/>
 </segment>
 </net>
 <net name="N$67" class="0">
@@ -17385,11 +17338,6 @@ With Ilim = 1A</text>
 <pinref part="D3.3V4" gate="G$1" pin="D3.3V"/>
 </segment>
 <segment>
-<wire x1="-45.72" y1="31.75" x2="-36.83" y2="31.75" width="0.1524" layer="91"/>
-<pinref part="D3.3V5" gate="G$1" pin="D3.3V"/>
-<pinref part="R11" gate="G$1" pin="1"/>
-</segment>
-<segment>
 <pinref part="L3" gate="G$1" pin="2"/>
 <pinref part="D3.3V6" gate="G$1" pin="D3.3V"/>
 </segment>
@@ -17410,6 +17358,14 @@ With Ilim = 1A</text>
 <pinref part="L20" gate="G$1" pin="2"/>
 <wire x1="721.36" y1="-133.35" x2="721.36" y2="-130.81" width="0.1524" layer="91"/>
 <pinref part="D3.3V8" gate="G$1" pin="D3.3V"/>
+</segment>
+<segment>
+<pinref part="L19" gate="G$1" pin="2"/>
+<pinref part="D3.3V5" gate="G$1" pin="D3.3V"/>
+</segment>
+<segment>
+<pinref part="L18" gate="G$1" pin="2"/>
+<pinref part="D3.3V9" gate="G$1" pin="D3.3V"/>
 </segment>
 </net>
 <net name="N$88" class="0">
@@ -17975,19 +17931,6 @@ With Ilim = 1A</text>
 <pinref part="USB2" gate="G$1" pin="GND"/>
 <wire x1="576.58" y1="-154.94" x2="582.93" y2="-154.94" width="0.1524" layer="91"/>
 <label x="579.12" y="-153.67" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="AVDD_CODEC1" class="0">
-<segment>
-<pinref part="C14" gate="G$1" pin="1"/>
-<pinref part="L21" gate="G$1" pin="1"/>
-<junction x="734.06" y="-196.85"/>
-<wire x1="734.06" y1="-196.85" x2="725.17" y2="-196.85" width="0.1524" layer="91"/>
-<pinref part="U4" gate="P" pin="VDDANA"/>
-<wire x1="725.17" y1="-196.85" x2="713.74" y2="-196.85" width="0.1524" layer="91"/>
-<wire x1="713.74" y1="-212.09" x2="713.74" y2="-196.85" width="0.1524" layer="91"/>
-<pinref part="C48" gate="G$1" pin="1"/>
-<junction x="725.17" y="-196.85"/>
 </segment>
 </net>
 <net name="AVR_VDD" class="0">
