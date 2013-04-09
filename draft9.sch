@@ -16223,11 +16223,6 @@ Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly
 <label x="749.3" y="-397.51" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U10" gate="X" pin="PX35"/>
-<wire x1="900.43" y1="-280.67" x2="905.51" y2="-280.67" width="0.1524" layer="91"/>
-<label x="905.51" y="-280.67" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U10" gate="X" pin="PX34"/>
 <wire x1="900.43" y1="-275.59" x2="905.51" y2="-275.59" width="0.1524" layer="91"/>
 <label x="905.51" y="-275.59" size="1.778" layer="95" xref="yes"/>

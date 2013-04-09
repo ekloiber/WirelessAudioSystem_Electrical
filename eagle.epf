@@ -8,12 +8,13 @@ Desktop="Desktop"
 [Globals]
 AutoSaveProject=1
 UsedLibrary="C:/Users/Eva/Google Drive/Eagle data/lbr/00-EvaLibrary.lbr"
+UsedLibrary="C:/Users/Eva/Google Drive/Eagle data/lbr/SparkFun-Connectors.lbr"
 UsedLibrary="C:/Users/Eva/Google Drive/Eagle data/lbr/SparkFun-Passives (1).lbr"
 
 [Win_1]
 Type="Control Panel"
 Loc="2560 752 3593 1602"
-State=0
+State=2
 Number=0
 
 [Desktop]
